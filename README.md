@@ -5,7 +5,7 @@ Simple TypeScript function for toggling classes in HTML Elements.
 Using this functions is simple.
 
 ```js
-import { ToggleClass } from ./toggle-class;
+import { ToggleClass } from "./toggle-class";
 
 const yourElement = document.querySelector('.your-element-to-toggle');
 
