@@ -1,5 +1,5 @@
 # ts-toggle-classes
-Simple TypeScript function for toggling classes in HTML Elements.
+Simple TypeScript function for toggling multiple classes in HTML Elements.
 
 ## Usage
 Using this functions is simple.
