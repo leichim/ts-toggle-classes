@@ -3,7 +3,7 @@
  * @param element The element for which the class should be toggled
  * @param className The name of the given class, or an array of names
  */
-export function ToggleClass(element: HTMLElement | null, className: string | string[]): void {
+export function ToggleClass(element: HTMLElement | Element | null, className: string | string[]): void {
 
     if( ! element ) {
         return;
@@ -11,18 +11,10 @@ export function ToggleClass(element: HTMLElement | null, className: string | str
 
     if( Array.isArray(className) ) {
         className.forEach(name => {
-            if( element.classList.contains(name) ) {
-                element.classList.remove(name);
-            } else {
-                element.classList.add(name);
-            }            
+            element.classList.toggle(name);            
         });
     } else {
-        if( element.classList.contains(className) ) {
-            element.classList.remove(className);
-        } else {
-            element.classList.add(className);
-        }
+        element.classList.toggle(className);
     }
     
 }
