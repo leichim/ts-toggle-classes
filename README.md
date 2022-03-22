@@ -2,7 +2,7 @@
 Simple TypeScript function for toggling one or multiple classes in HTML Elements.
 
 ## Usage
-Using this functions is simple.
+Using this function is simple.
 
 ```js
 import { ToggleClass } from "./toggle-class";
